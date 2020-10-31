@@ -33,10 +33,9 @@ app.post("/", (req,res) => {
 
   const jsonData = JSON.stringify(data)
 
-  const url = "https://us4.api.mailchimp.com/3.0?lists=f96182e3da&apikey=d2adf23f3e9613108679c6ad94d1388c-us4"
   const options = {
     method: "POST",
-    auth: "vika:d2adf23f3e9613108679c6ad94d1388c-us4"
+ 
   }
 
   const request = https.request(url, options, (response) =>{
